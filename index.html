@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskTideWave</title>
+
+    <link rel="stylesheet" href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="tail.css" rel="stylesheet" />
+  </head>
+  <body>
+  
+    <!-- Navbar section -->
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <!-- Page Routes -->
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Tasbih Counter</a></li>
+              <li><a href="#">Routine Maker</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+            <!-- webpage title -->
+          <a class="btn btn-ghost normal-case text-xl">TaskTideWave</a>
+        </div>
+        <!-- Nav Items search bar -->
+        <div class="navbar-end">
+            <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+              </div>
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+        </div>
+      </div>
+    <!-- End of  Navbar section -->
+
+
+
+
+<!-- 
+
+    homepage a thakbe to do bazar list 
+    second section a hobe tasbihcounter \
+ 3rd section a hobe routine maker 
+ -->
+
+
+
+    <div class="header">
+Digital Tasbih Counter
+    </div>
+<!-- Tasbih section -->
+
+<section class="tasbih-home flex m-20 gap-y-2 " >
+
+    <!-- Cards Thakbe  -->
+
+    <!-- Subhanallah sec -->
+
+
+    <div class="card card-compact w-96 bg-base-100 shadow-xl mr-2">
+        <figure><img src="images/subhanallah-card.png" alt="subhanallah-card" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Subhanallah</h2>
+          <p>Say 33 times!</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Tap here to begin Tasbih</button>
+          </div>
+        </div>
+      </div>
+    <!-- ENd of Subhanallah sec -->
+
+  
+
+    <!-- Alhamdulillah sec -->
+    <div class="card card-compact w-96 bg-base-100 shadow-xl mr-2">
+        <figure><img src="images/Alhamdulillah-card.png" alt="Alhamdulillah-card" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Alhamdulillah</h2>
+          <p>Say 33 times! </p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Tap here to begin Tasbih</button>
+          </div>
+        </div>
+      </div>
+    
+    <!--End of  Alhamdulillah sec -->
+    <!-- AllahuAkbar sec 34 times-->
+    <div class="card card-compact w-96 bg-base-100 shadow-xl">
+        <figure><img src="images/AllahuAkbar-card.png" alt="AllahuAkbar" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">AllahuAkbar!</h2>
+          <p>Say 34 times! </p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Tap here to begin Tasbih</button>
+          </div>
+        </div>
+      </div>
+    <!-- END of AllahuAkbar sec -->
+
+
+<!-- Cards Thakbe  -->
+
+
+
+<!-- Reset button -->
+
+
+
+
+<!-- End of Reset button -->
+
+</section>
+<!-- End of Tasbih section -->
+
+
+  </body>
+
+  <script src="index.js"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="tailwind.js"></script>
+</html>

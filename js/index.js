@@ -35,11 +35,11 @@ Subhanallahbtn.addEventListener('click', function () {
 
 
         const successMessage = document.getElementById('message');
-        successMessage.classList.remove('hidden');
+        successMessage.classList.remove('invisible');
 
         // Hide the message after 6 seconds (6000 milliseconds)
         setTimeout(function () {
-            successMessage.classList.add('hidden');
+            successMessage.classList.add('invisible');
         }, 6000);
     }
     else {
@@ -60,11 +60,11 @@ alhamdulillahbtn.addEventListener('click', function () {
 
 
         const successMessage = document.getElementById('message2');
-        successMessage.classList.remove('hidden');
+        successMessage.classList.remove('invisible');
 
         // Hide the message after 6 seconds (6000 milliseconds)
         setTimeout(function () {
-            successMessage.classList.add('hidden');
+            successMessage.classList.add('invisible');
         }, 6000);
     }
     else {
@@ -84,11 +84,13 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
 
         const successMessage = document.getElementById('message3');
-        successMessage.classList.remove('hidden');
+        successMessage.classList.remove('invisible');
         // Hide the message after 6 seconds (6000 milliseconds)
         setTimeout(function () {
-            successMessage.classList.add('hidden');
+            successMessage.classList.add('invisible');
         }, 6000);
+
+        // modal dua hide the message
         const showModal = document.getElementById('modal');
         showModal.classList.remove('hidden');
 

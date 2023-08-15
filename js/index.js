@@ -14,12 +14,16 @@ const AllahuAkbarbtn = document.getElementById("AllahuAkbarbtn");
 
 const resetbtn = document.getElementById("resetbtn");
 
-console.log(subhanallahdisplay);
-console.log(Subhanallahbtn);
+// const resetbtn2 = document.getElementById("resetbtn2");
 
-console.log(Alhamdulillahdisplay);
+// const resetbtn3 = document.getElementById("resetbtn3");
 
-console.log(alhamdulillahbtn);
+// console.log(subhanallahdisplay);
+// console.log(Subhanallahbtn);
+
+// console.log(Alhamdulillahdisplay);
+
+// console.log(alhamdulillahbtn);
 console.log(resetbtn);
 let subhanallahdisplayvalue = 0;
 let alhamdulillahdisplayvalue = 0;
@@ -111,11 +115,23 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
 resetbtn.addEventListener('click', function () {
     subhanallahdisplayvalue = 0;
-    alhamdulillahdisplayvalue = 0;
+     subhanallahdisplay.innerText = subhanallahdisplayvalue; 
+     
+   
+    console.log(subhanallahdisplayvalue);
+
+     alhamdulillahdisplayvalue = 0;
+    Alhamdulillahdisplay.innerText = alhamdulillahdisplayvalue; 
+    
     allahuakbardisplayvalue = 0;
-    subhanallahdisplay.innerText = subhanallahdisplayvalue;
-    Alhamdulillahdisplay.innerText = alhamdulahdisplay;
+
     allahuakbardisplay.innerText = allahuakbardisplayvalue;
+
+    console.log(alhamdulillahdisplayvalue);
+
+    console.log(allahuakbardisplayvalue);
 
 
 });
+
+ 

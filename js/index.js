@@ -32,6 +32,9 @@ let allahuakbardisplayvalue = 0;
 Subhanallahbtn.addEventListener('click', function () {
     subhanallahdisplayvalue += 1;
     if (subhanallahdisplayvalue >= 34) {
+    //    card hide after 33 times
+        const subhanallahCard =document.getElementById('card1');
+       subhanallahCard.classList.add('hidden');
 
 
         const successMessage = document.getElementById('message');
@@ -57,6 +60,9 @@ Subhanallahbtn.addEventListener('click', function () {
 alhamdulillahbtn.addEventListener('click', function () {
     alhamdulillahdisplayvalue += 1;
     if (alhamdulillahdisplayvalue >= 34) {
+   //    card hide after 33 times
+   const alhamdulillahCard =document.getElementById('card2');
+   alhamdulillahCard.classList.add('hidden');
 
 
         const successMessage = document.getElementById('message2');
@@ -82,6 +88,9 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
     if (allahuakbardisplayvalue >= 35) {
 
+   //    card hide after 33 times
+   const allahuakbarCard =document.getElementById('card3');
+   allahuakbarCard.classList.add('hidden');
 
         const successMessage = document.getElementById('message3');
         successMessage.classList.remove('invisible');

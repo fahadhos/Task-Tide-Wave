@@ -32,9 +32,9 @@ let allahuakbardisplayvalue = 0;
 Subhanallahbtn.addEventListener('click', function () {
     subhanallahdisplayvalue += 1;
     if (subhanallahdisplayvalue >= 34) {
-    //    card hide after 33 times
-        const subhanallahCard =document.getElementById('card1');
-       subhanallahCard.classList.add('hidden');
+        //    card hide after 33 times
+        const subhanallahCard = document.getElementById('card1');
+        subhanallahCard.classList.add('hidden');
 
 
         const successMessage = document.getElementById('message');
@@ -60,9 +60,9 @@ Subhanallahbtn.addEventListener('click', function () {
 alhamdulillahbtn.addEventListener('click', function () {
     alhamdulillahdisplayvalue += 1;
     if (alhamdulillahdisplayvalue >= 34) {
-   //    card hide after 33 times
-   const alhamdulillahCard =document.getElementById('card2');
-   alhamdulillahCard.classList.add('hidden');
+        //    card hide after 33 times
+        const alhamdulillahCard = document.getElementById('card2');
+        alhamdulillahCard.classList.add('hidden');
 
 
         const successMessage = document.getElementById('message2');
@@ -88,9 +88,9 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
     if (allahuakbardisplayvalue >= 35) {
 
-   //    card hide after 33 times
-   const allahuakbarCard =document.getElementById('card3');
-   allahuakbarCard.classList.add('hidden');
+        //    card hide after 33 times
+        const allahuakbarCard = document.getElementById('card3');
+        allahuakbarCard.classList.add('hidden');
 
         const successMessage = document.getElementById('message3');
         successMessage.classList.remove('invisible');
@@ -126,14 +126,14 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
 resetbtn.addEventListener('click', function () {
     subhanallahdisplayvalue = 0;
-     subhanallahdisplay.innerText = subhanallahdisplayvalue; 
-     
-   
+    subhanallahdisplay.innerText = subhanallahdisplayvalue;
+
+
     console.log(subhanallahdisplayvalue);
 
-     alhamdulillahdisplayvalue = 0;
-    Alhamdulillahdisplay.innerText = alhamdulillahdisplayvalue; 
-    
+    alhamdulillahdisplayvalue = 0;
+    Alhamdulillahdisplay.innerText = alhamdulillahdisplayvalue;
+
     allahuakbardisplayvalue = 0;
 
     allahuakbardisplay.innerText = allahuakbardisplayvalue;
@@ -142,7 +142,17 @@ resetbtn.addEventListener('click', function () {
 
     console.log(allahuakbardisplayvalue);
 
+       //    card will be appear after reset
+       const subhanallahCard =document.getElementById('card1');
+       subhanallahCard.classList.remove('hidden');
+       //    card will be appear after reset
+       const alhamdulillahCard =document.getElementById('card1');
+       alhamdulillahCard.classList.remove('hidden');
+       //    card will be appear after reset
+       const allahuakbarCard =document.getElementById('card1');
+       allahuakbarCard.classList.remove('hidden');
+
+
 
 });
 
- 

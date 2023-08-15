@@ -146,10 +146,10 @@ resetbtn.addEventListener('click', function () {
        const subhanallahCard =document.getElementById('card1');
        subhanallahCard.classList.remove('hidden');
        //    card will be appear after reset
-       const alhamdulillahCard =document.getElementById('card1');
+       const alhamdulillahCard =document.getElementById('card2');
        alhamdulillahCard.classList.remove('hidden');
        //    card will be appear after reset
-       const allahuakbarCard =document.getElementById('card1');
+       const allahuakbarCard =document.getElementById('card3');
        allahuakbarCard.classList.remove('hidden');
 
 

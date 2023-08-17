@@ -148,10 +148,10 @@ resetbtn.addEventListener('click', function () {
        subhanallahCard.classList.remove('opacity-30');
        //    card will be appear after reset
        const alhamdulillahCard =document.getElementById('card2');
-       alhamdulillahCard.classList.remove('hidden');
+       alhamdulillahCard.classList.remove('opacity-30');
        //    card will be appear after reset
        const allahuakbarCard =document.getElementById('card3');
-       allahuakbarCard.classList.remove('hidden');
+       allahuakbarCard.classList.remove('opacity-30');
 
 
 

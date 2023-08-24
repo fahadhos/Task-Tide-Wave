@@ -52,8 +52,8 @@ Subhanallahbtn.addEventListener('click', function () {
 
     }
     if ("vibrate" in navigator) {
-        // Vibrate for 500 milliseconds
-        navigator.vibrate(100);
+        // Vibrate for 10 milliseconds
+        navigator.vibrate(10);
       } else {
         console.log("Vibration not supported on this device.");
       }
@@ -88,8 +88,8 @@ alhamdulillahbtn.addEventListener('click', function () {
     }
     console.log(Alhamdulillahdisplay);
     if ("vibrate" in navigator) {
-        // Vibrate for 500 milliseconds
-        navigator.vibrate(100);
+        // Vibrate for 10 milliseconds
+        navigator.vibrate(10);
       } else {
         console.log("Vibration not supported on this device.");
       }
@@ -129,8 +129,8 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
     console.log(allahuakbardisplayvalue);
     if ("vibrate" in navigator) {
-        // Vibrate for 500 milliseconds
-        navigator.vibrate(100);
+        // Vibrate for 10 milliseconds
+        navigator.vibrate(10);
       } else {
         console.log("Vibration not supported on this device.");
       }

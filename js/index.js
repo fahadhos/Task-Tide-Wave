@@ -51,7 +51,12 @@ Subhanallahbtn.addEventListener('click', function () {
        
 
     }
-
+    if ("vibrate" in navigator) {
+        // Vibrate for 500 milliseconds
+        navigator.vibrate(500);
+      } else {
+        console.log("Vibration not supported on this device.");
+      }
 
 
     console.log(subhanallahdisplayvalue)
@@ -82,7 +87,12 @@ alhamdulillahbtn.addEventListener('click', function () {
 
     }
     console.log(Alhamdulillahdisplay);
-
+    if ("vibrate" in navigator) {
+        // Vibrate for 500 milliseconds
+        navigator.vibrate(500);
+      } else {
+        console.log("Vibration not supported on this device.");
+      }
 });
 
 // Allahuakbar Update er code
@@ -118,7 +128,12 @@ AllahuAkbarbtn.addEventListener('click', function () {
     }
 
     console.log(allahuakbardisplayvalue);
-
+    if ("vibrate" in navigator) {
+        // Vibrate for 500 milliseconds
+        navigator.vibrate(500);
+      } else {
+        console.log("Vibration not supported on this device.");
+      }
 });
 
 

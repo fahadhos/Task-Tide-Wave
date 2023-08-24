@@ -38,7 +38,7 @@ Subhanallahbtn.addEventListener('click', function () {
         const subhanallahCard =document.getElementById('card1');
         subhanallahCard.classList.add('opacity-30');
         
-        const successMessage = document.getElementById('message');
+        const successMessage = document.getElementById('message1');
         successMessage.classList.remove('invisible');
         
         // Hide the message after 6 seconds (6000 milliseconds)

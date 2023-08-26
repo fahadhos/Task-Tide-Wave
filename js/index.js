@@ -31,7 +31,7 @@ let allahuakbardisplayvalue = 0;
 
 Subhanallahbtn.addEventListener('click', function () {
   subhanallahdisplayvalue += 1;
-     if (subhanallahdisplayvalue >= 33  && subhanallahdisplay.innerText>=33) {
+     if (subhanallahdisplayvalue  >= 33  && subhanallahdisplay.innerText >= 33) {
         //    card hide after 33 times
         // const subhanallahCard = document.getElementById('card1');
         // subhanallahCard.classList.add('hidden');
@@ -40,7 +40,7 @@ Subhanallahbtn.addEventListener('click', function () {
         
         const successMessage = document.getElementById('message1');
         successMessage.classList.remove('invisible');
-        
+       
         // Hide the message after 6 seconds (6000 milliseconds)
         setTimeout(function () {
             successMessage.classList.add('invisible');
@@ -49,11 +49,10 @@ Subhanallahbtn.addEventListener('click', function () {
     else {
         subhanallahdisplay.innerText = subhanallahdisplayvalue;
        
-
     }
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
-        navigator.vibrate(10);
+        navigator.vibrate(5);
       } else {
         console.log("Vibration not supported on this device.");
       }
@@ -66,7 +65,7 @@ Subhanallahbtn.addEventListener('click', function () {
 // Alhamdulillah Update er code
 alhamdulillahbtn.addEventListener('click', function () {
    
-    if (alhamdulillahdisplayvalue == 33 ) {
+    if (alhamdulillahdisplayvalue >= 33 && Alhamdulillahdisplay.innerText > 32  ) {
         //    card hide after 33 times
         const alhamdulillahCard = document.getElementById('card2');
         alhamdulillahCard.classList.add('opacity-30');
@@ -89,7 +88,7 @@ alhamdulillahbtn.addEventListener('click', function () {
     console.log(Alhamdulillahdisplay);
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
-        navigator.vibrate(10);
+        navigator.vibrate(5);
       } else {
         console.log("Vibration not supported on this device.");
       }
@@ -99,7 +98,7 @@ alhamdulillahbtn.addEventListener('click', function () {
 AllahuAkbarbtn.addEventListener('click', function () {
     allahuakbardisplayvalue += 1;
 
-    if (allahuakbardisplayvalue >34) {
+    if (allahuakbardisplayvalue > 34) {
 
         //    card hide after 33 times
         const allahuakbarCard = document.getElementById('card3');
@@ -130,7 +129,7 @@ AllahuAkbarbtn.addEventListener('click', function () {
     console.log(allahuakbardisplayvalue);
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
-        navigator.vibrate(10);
+        navigator.vibrate(5);
       } else {
         console.log("Vibration not supported on this device.");
       }

@@ -119,79 +119,81 @@ Tasks
     <!-- Tasbih section -->
 
     <section  
-      class="justify-center items-center text-center max-sm:justify-center max-sm:items-center max-sm:text-center tasbih-home flex ml-auto mr-auto mt-0 mb-16 max-sm:mr-auto max-sm:ml-auto max-sm:mt-0 max-sm:mb-0  max-sm:pl-[3rem] max-sm:block  mx-auto"
+      class="justify-center items-center text-center max-sm:justify-center max-sm:items-center max-sm:text-center tasbih-home 
+      flex ml-auto mr-auto mt-0 mb-16 max-sm:mr-auto max-sm:ml-auto max-sm:mt-0 max-sm:mb-0  max-sm:pl-[3rem] max-sm:block  mx-auto"
     >
       <!-- Cards Thakbe  -->
 
-      <div class=" flex-col  max-sm:items-center max-sm:justify-center max-sm:h-screen max-sm:w-max  " >
-        <!-- <div class="block" > -->
+      <div class=" lg:flex-col  max-sm:items-center max-sm:justify-center max-sm:h-screen max-sm:w-max  " >
+        <div class="block" >
       
-        <!-- Subhanallah sec -->
-        <!--  -->
-        <div id="card1"
-               class="card card-compact w-96 bg-base-100 shadow-xl mr-4 max-sm:w-80  max-sm:mb-2   "
-         >
-          <figure>
-            <img src="images/subhanallah-card.png" alt="subhanallah-card" />
-          </figure>
-          <div
-            class="card-body justify-center text-center items-center max-sm:items-center max-sm:text-center max-sm:justify-center"
-          >
-            <h2 class="card-title">Subhanallah</h2>
-
-            <p>Say 33 times!</p>
-
-            <!-- added counting number styles -->
-            <div
-              class="flex flex-col p-2 bg-neutral rounded-box w-24 text-neutral-content relative items-center max-sm:mb-2"
-            >
-              <span class="font-mono text-3xl">
-                <p id="subhanallahdisplay">0</p>
-                <!-- <span style="--value:33;"></span> -->
-              </span>
-              <span class="text-center">times</span>
-            </div>
-            <!-- added counting number styles -->
-            <div class="card-actions justify-center">
-              <button id="Subhanallahbtn" class="btn btn-outline btn-success " >
-                Tap here to begin Tasbih
-              </button>
-            </div>
-            <!-- added counting number styles -->
-          </div>
-        </div>
-        <!-- <div> -->
-          <!-- message alert subhanallah card   -->
-   
-          <div
-          class="w-96 items-center text-center justify-center max-sm:justify-center max-sm:text-center max-sm:items-center max-sm:w-72 max-sm:relative" 
-        >
-        <!-- message alert  -->
-          <span id="message1" class="invisible">
-            <div
-              class="alert alert-success mb-20 text-cyan-50 font-semibold max-sm:mt-2 max-sm:mb-2 max-sm:font-semibold max-sm:w-80 max-sm:text-sm" 
-            >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="stroke-current shrink-0 h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
+      
+            <!-- Subhanallah sec -->
+            <!--  -->
+            <div id="card1"
+                   class="card card-compact w-96 bg-base-100 shadow-xl mr-4 max-sm:w-80  max-sm:mb-2   "
+             >
+              <figure>
+                <img src="images/subhanallah-card.png" alt="subhanallah-card" />
+              </figure>
+              <div
+                class="card-body justify-center text-center items-center max-sm:items-center max-sm:text-center max-sm:justify-center"
+              >
+                <h2 class="card-title">Subhanallah</h2>
+    
+                <p>Say 33 times!</p>
+    
+                <!-- added counting number styles -->
+                <div
+                  class="flex flex-col p-2 bg-neutral rounded-box w-24 text-neutral-content relative items-center max-sm:mb-2"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span>Your counting has been finished!</span>
+                  <span class="font-mono text-3xl">
+                    <p id="subhanallahdisplay">0</p>
+                    <!-- <span style="--value:33;"></span> -->
+                  </span>
+                  <span class="text-center">times</span>
+                </div>
+                <!-- added counting number styles -->
+                <div class="card-actions justify-center">
+                  <button id="Subhanallahbtn" class="btn btn-outline btn-success " >
+                    Tap here to begin Tasbih
+                  </button>
+                </div>
+                <!-- added counting number styles -->
               </div>
-            </span>
-          </div>
-          <!-- end of message alert  -->
+            </div>
+            <!-- <div> -->
+              <!-- message alert subhanallah card   -->
+                 <div
+              class="w-96 items-center text-center justify-center max-sm:justify-center max-sm:text-center max-sm:items-center max-sm:w-72 max-sm:relative" 
+            >
+            <!-- message alert  -->
+              <span id="message1" class="invisible">
+                <div
+                  class="alert alert-success mb-20 text-cyan-50 font-semibold max-sm:mt-2 max-sm:mb-2 max-sm:font-semibold max-sm:w-80 max-sm:text-sm" 
+                >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="stroke-current shrink-0 h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span>Your counting has been finished!</span>
+                  </div>
+                </span>
+              </div>
+              <!-- end of message alert  -->
+            </div>
+            <!-- end of subhanllah block div  -->
+            
         </div>
-        <!-- end of subhanllah block div  -->
-        
 
 
       <!-- End of Subhanallah sec -->

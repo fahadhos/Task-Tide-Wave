@@ -31,22 +31,23 @@ let allahuakbardisplayvalue = 0;
 
 
 Subhanallahbtn.addEventListener('click', function () {
-  subhanallahdisplayvalue += 1;
-//   this.classList.add("not-allowed");
-//   this.disabled = true; // Optionally disable the button after click
-     if (subhanallahdisplayvalue  >= 33   ) {
+    //    counter
+    subhanallahdisplayvalue += 1;
+    //   this.classList.add("not-allowed");
+    //   this.disabled = true; // Optionally disable the button after click
+    if (subhanallahdisplayvalue > 33) {
         //    card hide after 33 times
         // const subhanallahCard = document.getElementById('card1');
         // subhanallahCard.classList.add('hidden');
 
-        document.getElementById("Subhanallahbtn").style.cursor = "not-allowed";  
-        
+        document.getElementById("Subhanallahbtn").style.cursor = "not-allowed";
+
         // const subhanallahCard =document.getElementById('card1');
         // subhanallahCard.classList.add('opacity-30');
-        
+
         // const successMessage = document.getElementById('message1');
         // successMessage.classList.remove('invisible');
-       
+
         // // Hide the message after 6 seconds (6000 milliseconds)
         // setTimeout(function () {
         //     successMessage.classList.add('invisible');
@@ -56,28 +57,27 @@ Subhanallahbtn.addEventListener('click', function () {
     }
     else {
         subhanallahdisplay.innerText = subhanallahdisplayvalue;
-       
+
     }
 
-    if( subhanallahdisplay.innerText == 33)
-{
-    const subhanallahCard =document.getElementById('card1');
-    subhanallahCard.classList.add('opacity-30');
-    
-    const successMessage = document.getElementById('message1');
-    successMessage.classList.remove('invisible');
-   
-    // Hide the message after 6 seconds (6000 milliseconds)
-    setTimeout(function () {
-        successMessage.classList.add('invisible');
-    }, 3000);
-}
+    if (subhanallahdisplay.innerText >= 33) {
+        const subhanallahCard = document.getElementById('card1');
+        subhanallahCard.classList.add('opacity-30');
+
+        const successMessage = document.getElementById('message1');
+        successMessage.classList.remove('invisible');
+
+        // Hide the message after 6 seconds (6000 milliseconds)
+        setTimeout(function () {
+            successMessage.classList.add('invisible');
+        }, 3000);
+    }
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
         navigator.vibrate(10);
-      } else {
+    } else {
         console.log("Vibration not supported on this device.");
-      }
+    }
 
 
     console.log(subhanallahdisplayvalue)
@@ -86,15 +86,16 @@ Subhanallahbtn.addEventListener('click', function () {
 
 // Alhamdulillah Update er code
 alhamdulillahbtn.addEventListener('click', function () {
-    
-    
-    if (alhamdulillahdisplayvalue >= 33   ) {
+    //    counter
+
+    alhamdulillahdisplayvalue += 1;
+    if (alhamdulillahdisplayvalue > 33) {
         //    card hide after 33 times
-        
+
         // document.getElementById("alhamdulillahbtn").disabled = true;
-        document.getElementById("alhamdulillahbtn").style.cursor = "not-allowed";  
+        document.getElementById("alhamdulillahbtn").style.cursor = "not-allowed";
         // Wait || Help || Move || Pointer || Crosshair || Cell || None ;
-      
+
         // const alhamdulillahCard = document.getElementById('card2');
         // alhamdulillahCard.classList.add('opacity-30');
 
@@ -109,14 +110,13 @@ alhamdulillahbtn.addEventListener('click', function () {
 
 
     }
-   
+
     else {
-        
-    alhamdulillahdisplayvalue += 1;
+
         Alhamdulillahdisplay.innerText = alhamdulillahdisplayvalue;
 
-    } if( Alhamdulillahdisplay.innerText == 33){
-        
+    } if (Alhamdulillahdisplay.innerText >= 33) {
+
         const alhamdulillahCard = document.getElementById('card2');
         alhamdulillahCard.classList.add('opacity-30');
 
@@ -134,20 +134,21 @@ alhamdulillahbtn.addEventListener('click', function () {
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
         navigator.vibrate(10);
-      } else {
+    } else {
         console.log("Vibration not supported on this device.");
-      }
+    }
 });
 
 // Allahuakbar Update er code
 AllahuAkbarbtn.addEventListener('click', function () {
+    //    counter
     allahuakbardisplayvalue += 1;
 
     if (allahuakbardisplayvalue > 34) {
 
         //    card hide after 33 times
-        
-        document.getElementById("AllahuAkbarbtn").style.cursor = "not-allowed";  
+
+        document.getElementById("AllahuAkbarbtn").style.cursor = "not-allowed";
         // document.getElementById("AllahuAkbarbtn").disabled = true;
         // const allahuakbarCard = document.getElementById('card3');
         // allahuakbarCard.classList.add('opacity-30');
@@ -177,7 +178,7 @@ AllahuAkbarbtn.addEventListener('click', function () {
 
     }
 
-    if( allahuakbardisplay.innerText == 34){
+    if (allahuakbardisplay.innerText >= 34) {
         const allahuakbarCard = document.getElementById('card3');
         allahuakbarCard.classList.add('opacity-30');
 
@@ -202,9 +203,9 @@ AllahuAkbarbtn.addEventListener('click', function () {
     if ("vibrate" in navigator) {
         // Vibrate for 10 milliseconds
         navigator.vibrate(10);
-      } else {
+    } else {
         console.log("Vibration not supported on this device.");
-      }
+    }
 });
 
 
@@ -231,15 +232,15 @@ resetbtn.addEventListener('click', function () {
 
     console.log(allahuakbardisplayvalue);
 
-       //    card will be appear after reset
-       const subhanallahCard =document.getElementById('card1');
-       subhanallahCard.classList.remove('opacity-30');
-       //    card will be appear after reset
-       const alhamdulillahCard =document.getElementById('card2');
-       alhamdulillahCard.classList.remove('opacity-30');
-       //    card will be appear after reset
-       const allahuakbarCard =document.getElementById('card3');
-       allahuakbarCard.classList.remove('opacity-30');
+    //    card will be appear after reset
+    const subhanallahCard = document.getElementById('card1');
+    subhanallahCard.classList.remove('opacity-30');
+    //    card will be appear after reset
+    const alhamdulillahCard = document.getElementById('card2');
+    alhamdulillahCard.classList.remove('opacity-30');
+    //    card will be appear after reset
+    const allahuakbarCard = document.getElementById('card3');
+    allahuakbarCard.classList.remove('opacity-30');
 
 
 
@@ -247,4 +248,3 @@ resetbtn.addEventListener('click', function () {
 
 
 
- 
